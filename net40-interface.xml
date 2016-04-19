@@ -11,16 +11,6 @@
     <method name="GetLicenseInfo" isstatic="true" returns="System.String" />
     <method name="IsValid" isstatic="true" returns="System.Boolean" />
   </class>
-  <class base="System.Attribute" isabstract="true" name="TallComponents.Licensing.LicenseAttribute">
-    <ctor ispublic="false" isprotected="true" />
-    <method name="AddLicense" isstatic="true" returns="System.Void">
-      <parameter name="licenseKey" type="System.String" />
-      <parameter name="licenseKeyValue" type="System.String" />
-    </method>
-    <method name="get_Key" isvirtual="true" isabstract="true" returns="System.String" />
-    <method name="get_Value" isvirtual="true" isabstract="true" returns="System.String" />
-    <interface name="System.Runtime.InteropServices._Attribute" />
-  </class>
   <class base="System.Object" isabstract="true" name="TallComponents.Licensing.LicenseCollection">
     <method name="Add" isstatic="true" returns="System.Void">
       <parameter name="licenseKey" type="System.String" />
